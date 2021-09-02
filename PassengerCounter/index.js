@@ -2,7 +2,6 @@ let saveEle=document.getElementById("save-ele");
 let countEle=document.getElementById("count-ele");
 let count=0;
 
-
 function increment(){
     count+=1
     countEle.innerHTML = count;
@@ -24,3 +23,4 @@ function clear(){
 function clearEntries(){
     saveEle.textContent="Previous entries: ";
 }
+
