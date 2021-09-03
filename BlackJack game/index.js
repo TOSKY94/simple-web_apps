@@ -18,12 +18,23 @@ let playerEl=document.querySelector("#play-el");
 playerEl.textContent=player.name+": $"+player.chips;
 
 function startGame(){
-    let firstCard=getRandomCard();
-    let secondCard=getRandomCard();
-    cards=[firstCard, secondCard];
-    sum= firstCard+secondCard;
-    isAlive=true;
-    renderGame();
+    if ((isAlive===false)&&(player.chips>0)){
+        let firstCard=getRandomCard();
+        let secondCard=getRandomCard();
+        cards=[firstCard, secondCard];
+        sum= firstCard+secondCard;
+        player.chips-=20;
+        playerEl.textContent=player.name+": $"+player.chips;
+        isAlive=true;
+        hasBlackJack=false;
+        renderGame();
+    } 
+    if (player.chips<=0){
+        message=`
+        You are out of chips`;
+        playerEl.textContent=player.name+": $"+player.chips+message;
+    }
+    
 }
 
 function renderGame(){
@@ -41,6 +52,9 @@ function renderGame(){
     } else if (sum===21){
         message="You have got BlackJack!!!";
         hasBlackJack=true;
+        player.chips+=50;
+        isAlive=false;
+        playerEl.textContent=player.name+": $"+player.chips;
     } else {
         message="You are out of the game";
         isAlive=false;
@@ -49,12 +63,13 @@ function renderGame(){
 }
 
 function newCard(){
-
-    let card =getRandomCard();
-
-    sum+=card;
-    cards.push(card);
-    renderGame();
+    if ((isAlive===true)&&(hasBlackJack===false)){
+        let card =getRandomCard();
+        sum+=card;
+        cards.push(card);
+        renderGame();
+    }
+    
 }
 
 function getRandomCard(){
