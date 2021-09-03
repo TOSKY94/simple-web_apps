@@ -16,6 +16,7 @@ let player={
 let playerEl1=document.querySelector("#play-el1");
 let playerEl2=document.querySelector("#play-el2");
 
+
 playerEl1.textContent=player.name+": $"+player.chips;
 
 function startGame(){
@@ -26,6 +27,7 @@ function startGame(){
         sum= firstCard+secondCard;
         player.chips-=20;
         playerEl1.textContent=player.name+": $"+player.chips;
+        playerEl2.textContent="";
         isAlive=true;
         hasBlackJack=false;
         renderGame();
