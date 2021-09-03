@@ -13,9 +13,10 @@ let player={
 }
 
 
-let playerEl=document.querySelector("#play-el");
+let playerEl1=document.querySelector("#play-el1");
+let playerEl2=document.querySelector("#play-el2");
 
-playerEl.textContent=player.name+": $"+player.chips;
+playerEl1.textContent=player.name+": $"+player.chips;
 
 function startGame(){
     if ((isAlive===false)&&(player.chips>0)){
@@ -24,15 +25,14 @@ function startGame(){
         cards=[firstCard, secondCard];
         sum= firstCard+secondCard;
         player.chips-=20;
-        playerEl.textContent=player.name+": $"+player.chips;
+        playerEl1.textContent=player.name+": $"+player.chips;
         isAlive=true;
         hasBlackJack=false;
         renderGame();
     } 
     if (player.chips<=0){
-        message=`
-        You are out of chips`;
-        playerEl.textContent=player.name+": $"+player.chips+message;
+        message=`You are out of chips`;
+        playerEl2.textContent=message;
     }
     
 }
