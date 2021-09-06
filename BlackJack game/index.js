@@ -8,7 +8,7 @@ let cardsEl=document.getElementById("cards-el");
 let sumEl=document.querySelector("#sum-el");
 
 let player={
-    name:"Patrick",
+    name:prompt('Please enter your name.'),
     chips:100
 }
 
@@ -50,7 +50,7 @@ function renderGame(){
 
     sumEl.textContent="Sum: "+sum;
     if (sum<21){
-        message="Do you want to draw a new card?";
+        message="Please draw a new card";
     } else if (sum===21){
         message="You have got BlackJack!!!";
         hasBlackJack=true;
@@ -65,7 +65,7 @@ function renderGame(){
 }
 
 function newCard(){
-    if ((isAlive===true)&&(hasBlackJack===false)){
+    if (isAlive&&(hasBlackJack===false)){
         let card =getRandomCard();
         sum+=card;
         cards.push(card);
