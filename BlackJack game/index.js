@@ -8,7 +8,7 @@ let cardsEl=document.getElementById("cards-el");
 let sumEl=document.querySelector("#sum-el");
 
 let player={
-    name:prompt('Please enter your name.'),
+    name:"Patrick",
     chips:100
 }
 
