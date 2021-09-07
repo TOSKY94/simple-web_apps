@@ -7,15 +7,19 @@ let messageEl=document.getElementById("message-el");
 let cardsEl=document.getElementById("cards-el");
 let sumEl=document.querySelector("#sum-el");
 
-let player={
-    name:"Patrick",
-    chips:100
-}
-
 
 let playerEl1=document.querySelector("#play-el1");
 let playerEl2=document.querySelector("#play-el2");
 
+/*
+var form = new FormData(document.getElementById("form"))
+console.log(form.entries());
+*/
+
+var player={
+    name:"patrick",
+    chips: 100
+}
 
 playerEl1.textContent=player.name+": $"+player.chips;
 

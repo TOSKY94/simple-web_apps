@@ -10,6 +10,11 @@ body{
     background-size: 100% 100%;  
 
 }
+fieldset{
+    width:auto;
+    margin: 0 30em 0 30em;
+}
+
 h1{
     font-size: 50px;
     color: goldenrod;
