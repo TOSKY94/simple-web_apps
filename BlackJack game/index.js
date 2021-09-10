@@ -16,7 +16,7 @@ var form = new FormData(document.getElementById("form"))
 console.log(form.entries());
 */
 
-var player={
+let player={
     name:"patrick",
     chips: 100
 }
