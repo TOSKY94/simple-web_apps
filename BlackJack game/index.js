@@ -11,17 +11,20 @@ let sumEl=document.querySelector("#sum-el");
 let playerEl1=document.querySelector("#play-el1");
 let playerEl2=document.querySelector("#play-el2");
 
-/*
-var form = new FormData(document.getElementById("form"))
-console.log(form.entries());
-*/
+const fName = document.getElementById("fname-el")
+const chips = document.getElementById("chips-el")
 
-let player={
-    name:"patrick",
-    chips: 100
+function submit(){
+    console.log(typeof(fName.value))
+    console.log(typeof(chips.value))
 }
 
-playerEl1.textContent=player.name+": $"+player.chips;
+const player={
+    name:"patrick",
+    chips: 1000
+}
+
+playerEl1.innerHTML=player.name+": $"+player.chips;
 
 function startGame(){
     if ((isAlive===false)&&(player.chips>0)){
