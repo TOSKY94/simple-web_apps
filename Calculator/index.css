@@ -5,6 +5,7 @@
 
 body{
     background-color: #2b3252;
+    min-width: 300px;
 }
 
 #textField{

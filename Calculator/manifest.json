@@ -1,0 +1,11 @@
+{
+    "manifest_version":3,
+    "version":"1.0",
+    "name":"Calculator",
+    "icons":{"128":"icon128.png"},
+    "action":{
+        "default_popup":"index.html",
+        "default_icon": {"128":"icon128.png"}
+    },
+    "permissions":["tabs"]
+}
