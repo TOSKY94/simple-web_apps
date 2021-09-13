@@ -1,12 +1,19 @@
-const textField = document.getElementById("textField")
+const calculateField = document.getElementById("calculation")
+const resultField = document.getElementById("result")
 
 function display(value){
-    textField.textContent+=value
+    calculateField.textContent+=value
 }
 
 function clear(){
-    textField.textContent=""
+    calculateField.textContent=""
+    resultField.textContent=""
 }
+
+function calculate(){
+    resultField.textContent="result"
+}
+
 
 document.getElementById("1b").addEventListener("click",()=>(display(1)))
 document.getElementById("2b").addEventListener("click",()=>(display(2)))
@@ -25,3 +32,5 @@ document.getElementById("*b").addEventListener("click",()=>(display("*")))
 document.getElementById("/b").addEventListener("click",()=>(display("/")))
 
 document.getElementById("clear").addEventListener("click",()=>(clear()))
+
+document.getElementById("submit").addEventListener("click",()=>(calculate()))

@@ -8,14 +8,27 @@ body{
     min-width: 300px;
 }
 
-#textField{
+.textField{
     background-color: white;
     border: none;
-    border-radius: 2rem;
     padding: 0.25em;
     color: #2b3252;
     height: 15px;
+    display: inline-block;
 }
+#calculation{
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    width: 71%;
+    margin-right: 5px;
+}
+#result{
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    width: 20%;
+    margin-left: 5px;
+}
+
 .inputButton{
     margin: 0.5rem;
     max-width: 90%;
