@@ -3,7 +3,13 @@ body{
     padding: 0;
     width: 100vw;
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-content: center;
+}
+
+button{
+    border-radius: 10rem;
+    background-color: blueviolet;
+    color: white
+    
 }
