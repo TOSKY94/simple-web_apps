@@ -1,7 +1,23 @@
 body{
-    margin: 0;
+    background-color: darkgray;
+    margin: 5;
     padding: 0;
     justify-content: center;
     align-content: center;
 }
 
+
+.post{
+    background-color: beige;
+    border-radius: 5rem;
+}
+.post_title{
+    background-color: chocolate;
+    font-weight: bold;
+}
+
+.post_body{
+    background-color: cornsilk;
+    font-weight: lighter;
+    font-style: italic;
+}
