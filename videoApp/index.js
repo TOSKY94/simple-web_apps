@@ -7,3 +7,15 @@ fetch('https://picsum.photos/800/600')
         img.src = URL.createObjectURL(blob);
         document.querySelector('body').appendChild(img)
     })
+
+
+    function factorial(num) {
+        if (num===0){
+            return 1
+        }  else {
+            return num*factorial(num-1);
+        }
+    }
+
+    let number = factorial(3);
+    console.log(number)
