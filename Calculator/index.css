@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 body{
     background-color: #2b3252;
     min-width: 300px;
@@ -19,7 +20,7 @@ body{
 #calculation{
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
-    width: 71%;
+    width: 70%;
     margin-right: 5px;
 }
 #result{
