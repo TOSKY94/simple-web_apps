@@ -16,6 +16,9 @@ body{
     color: #2b3252;
     height: 15px;
     display: inline-block;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(2,1fr);
 }
 #calculation{
     border-top-left-radius: 2rem;
