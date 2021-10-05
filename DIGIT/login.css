@@ -62,3 +62,14 @@ button.login{
 input{
     border-radius: 20px;
 }
+
+#error-msg{
+    margin-top: 0;
+    text-align: center;
+    padding-top: 0;
+    color: red;
+}
+
+#create_account{
+    text-align: center;
+}
